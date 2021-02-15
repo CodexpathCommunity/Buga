@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+  --grayTheme: rgb(241, 242, 243);
+  --lightGreenTheme: rgb(30, 221, 30);
+  --lightOrangeTheme: rgba(226, 82, 15, 0.158);
+  --orangeTheme: rgb(226, 82, 15);
+  cursor: default;
+}
+.app--container {
+  background: var(--grayTheme);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app--content {
+  background: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  border-radius: 8px;
+  display: flex;
+}
+.app--left {
+  flex: 0.05;
+  border-right: 2px solid var(--grayTheme);
+  display: flex;
+  height: 100%;
+}
+.left--nav--container {
+  flex: 0.05;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 18px;
+  justify-content: space-between;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  height: 100%;
+}
+.fa-bars {
+  background: var(--grayTheme);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.nav--notification--container {
+  position: relative;
+}
+.notifications {
+  font-size: 12px;
+  padding: 2px 8px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: var(--orangeTheme);
+  color: #fff;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.app--right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.top--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav--options-container {
+  display: flex;
+  align-items: center;
+  flex: 0.4;
+  justify-content: space-between;
+}
+.nav--option {
+  cursor: pointer;
+}
+.active {
+  color: var(--lightGreenTheme);
+  border-bottom: 1px solid var(--lightGreenTheme);
+}
+.nav-btn-container {
+  display: flex;
+  flex: 0.15;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.btn {
+  padding: 5px 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login {
+  background: rgb(226, 82, 15);
+  color: #fff;
+}
+.signUp {
+  background: rgba(226, 82, 15, 0.158);
+  color: rgb(226, 82, 15);
+}
+.main--content--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin: auto 0;
+}
+.main--burger--container {
+  border: 2px solid var(--grayTheme);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.img--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-burga {
+  height: 250px;
+  width: 400px;
+}
+.burger--nutrient--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.burger--nutrient {
+  border: 1px solid var(--lightGreenTheme);
+  background: var(--grayTheme);
+  padding: 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.nutreint--rate {
+  font-weight: bolder;
+  font-size: 16px;
+}
+.cart--details {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.regulate-cart {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.InCart--items {
+  margin: 0 8px;
+}
+.add-cart {
+  display: flex;
+  align-items: center;
+  color: var(--lightGreenTheme);
+  background: var(--grayTheme);
+  padding: 5px 15px;
+  border-radius: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.cart--text {
+  margin-left: 6px;
+}
+.fa-minus,
+.fa-plus {
+  font-size: 10px;
+  cursor: pointer;
+}
+.side--burger--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+.side--burger--option {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--grayTheme);
+  padding: 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.side--img {
+  height: 150px;
+}
